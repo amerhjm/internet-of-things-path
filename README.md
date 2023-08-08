@@ -15,8 +15,8 @@ https://www.tinkercad.com/things/3eUkV3v8HmA?sharecode=dRkKgTGbiAx6Mcx7vYWwah6Mw
 # task 3:
 hdt sensor and detector using esp32 
 # sketch.ino 
-
-''' #include <WiFi.h>
+'''
+ #include <WiFi.h>
 #include <HTTPClient.h>
 
 #include <DHT.h> 
@@ -92,4 +92,5 @@ void loop() {
   Serial.print("payload : "); Serial.println(payload);
   Serial.println("--------------------------------------------------");
   delay(5000);
-} '''
+} 
+'''
