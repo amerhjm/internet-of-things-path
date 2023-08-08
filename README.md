@@ -26,7 +26,7 @@ DHT dht22(DHTPIN, DHTTYPE);
 
 String URL = "http://ip address /file project /file code.php";
 
-const char* ssid = "name the internet "; 
+const char* ssid = "name of your internet "; 
 const char* password = "password "; 
 
 int temperature = 0;
@@ -116,3 +116,4 @@ void loop() {
 }
 
 ```
+https://wokwi.com/projects/372482164206568449
