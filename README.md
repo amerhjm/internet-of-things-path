@@ -94,3 +94,25 @@ void loop() {
   delay(5000);
 } 
 ```
+# diagram.json
+
+```
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 4.08, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -105, "left": 204.99, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v154.93", "h-116.1" ] ],
+    [ "dht1:SDA", "esp:D15", "green", [ "v131.6", "h-124.93" ] ],
+    [ "dht1:GND", "esp:GND.1", "black", [ "v142.27", "h-141.56" ] ]
+  ],
+  "dependencies": {}
+}
+
+```
